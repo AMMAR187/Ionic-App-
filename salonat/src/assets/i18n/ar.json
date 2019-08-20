@@ -1,27 +1,48 @@
 {
     "menu": [{
-            "الرئيسية": "home"
+            "home": {
+                "title": "الرئيسية",
+                "url": "home"
+            }
         },
         {
-            "الصالونات القريبة": "home"
+            "nerybysalonat": {
+                "title": "الرئيسية",
+                "url": "nearbySalons"
+            }
         },
         {
-            "من نحن": "home"
+            "about": {
+                "title": "من نحن",
+                "url": "aboutus"
+            }
         },
         {
-            "شركاؤنا": "home"
+            "partners": {
+                "title": "شركاؤنا",
+                "url": "partners"
+            }
         },
         {
-            "تواصلي معنا": "home"
+            "contact": {
+                "title": "تواصل معنا",
+                "url": "contact"
+            }
         },
         {
-            "اللغه": "home"
+            "language": {
+                "title": "اللغة",
+                "url": "language"
+            }
         },
         {
-            "مشاركة التطبيق": "home"
+            "share ": {
+                "title": "مشاركة التطبيق",
+                "url": "share"
+            }
         }
     ],
     "home": {
-        "title": "اهلا و سهلا"
+        "title": "صالونات"
     }
 }
