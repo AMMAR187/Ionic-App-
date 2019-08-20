@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/contact" (click)="dismiss()"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Add Salon</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="addSalon" (submit)="onSubmit()">
+
+    <ion-item>
+      <ion-label position="floating" color="tertiary">Full Name</ion-label>
+      <ion-input type="text" formControlName="name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="tertiary">Email</ion-label>
+      <ion-input type="tel" formControlName="mobile"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="tertiary">Message</ion-label>
+      <ion-textarea rows="8" formControlName="description"></ion-textarea>
+    </ion-item>
+    <br>
+    <br>
+    <ion-button color="tertiary" expand="block" type="submit" [disabled]="!addSalon.valid">Submit</ion-button>
+  </form>
+</ion-content>

@@ -16,4 +16,8 @@ export class HomePage {
     this.translateConfigService.setLanguage(this.selectedLanguage);
   }
 
+  navigate(){
+    
+  }
+
 }

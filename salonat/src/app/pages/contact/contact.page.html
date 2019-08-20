@@ -1,9 +1,42 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>contact</ion-title>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="text-align: center">{{'contact.title'|translate}}</ion-title>
+    <ion-buttons slot="primary">
+      <ion-icon slot="icon-only" name="search"></ion-icon>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
+  <h4 color="tertiary">If you have an questions or inquiries , don't hesitate and contact us</h4>
+  <form [formGroup]="contactForm" (submit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating" color="tertiary">Type of Message</ion-label>
+      <ion-select formControlName="type" okText="Okay" cancelText="Dismiss">
+        <ion-select-option value="complain">complain</ion-select-option>
+        <ion-select-option value="suggestion">suggestion</ion-select-option>
+        <ion-select-option value="recomendation">recomendation</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="tertiary">Full Name</ion-label>
+      <ion-input type="text" formControlName="name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="tertiary">Email</ion-label>
+      <ion-input type="text" formControlName="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="tertiary">Message</ion-label>
+      <ion-textarea formControlName="message"></ion-textarea>
+    </ion-item>
+    <br>
+    <br>
+    <ion-button color="tertiary" expand="block" type="submit" [disabled]="!contactForm.valid">Submit</ion-button>
+    <ion-button color="warning" expand="block" type="button" (click)="openModal()">Add Salon</ion-button>
 
+  </form>
 </ion-content>

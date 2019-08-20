@@ -1,48 +1,58 @@
 {
-    "menu": [{
-            "home": {
-                "title": "الرئيسية",
-                "url": "home"
-            }
-        },
-        {
-            "nerybysalonat": {
-                "title": "الرئيسية",
-                "url": "nearbySalons"
-            }
-        },
-        {
-            "about": {
-                "title": "من نحن",
-                "url": "aboutus"
-            }
-        },
-        {
-            "partners": {
-                "title": "شركاؤنا",
-                "url": "partners"
-            }
-        },
-        {
-            "contact": {
-                "title": "تواصل معنا",
-                "url": "contact"
-            }
-        },
-        {
-            "language": {
-                "title": "اللغة",
-                "url": "language"
-            }
-        },
-        {
-            "share ": {
-                "title": "مشاركة التطبيق",
-                "url": "share"
-            }
-        }
-    ],
+    "name": "صالونات",
+    "account": "المستخدم",
+    "welcome": "أهلا بكم في صالونات",
     "home": {
+        "title": "الرئيسية",
+        "url": "/home",
+        "icon": "apps"
+
+    },
+
+    "nearybySalons": {
+        "title": "صالونات قريبة",
+        "url": "/nearby-salons",
+        "icon": "compass"
+
+    },
+
+    "about": {
+        "title": "من نحن",
+        "url": "/aboutus",
+        "icon": "information-circle"
+
+    },
+
+    "partners": {
+        "title": "شركاؤنا",
+        "url": "/partners",
+        "icon": "people"
+
+    },
+
+    "contact": {
+        "title": "تواصل معنا",
+        "url": "/contact",
+        "icon": "chatbubbles"
+
+    },
+
+    "language": {
+        "title": "اللغة",
+        "url": "language",
+        "icon": "exit"
+
+    },
+
+    "share ": {
+        "title": "مشاركة التطبيق",
+        "url": "share",
+        "icon": "paper-plane"
+
+    }
+
+    ,
+    "title": {
         "title": "صالونات"
     }
 }

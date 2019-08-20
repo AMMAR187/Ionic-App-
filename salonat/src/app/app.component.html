@@ -2,21 +2,66 @@
   <ion-split-pane>
     <ion-menu type="overlay">
       <ion-header>
-        <ion-toolbar>
-          <ion-title>{{'home.title'|translate}}</ion-title>
+        <ion-toolbar color="tertiary">
+          <ion-title>{{'title.title'|translate}}</ion-title>
         </ion-toolbar>
       </ion-header>
       <ion-content>
-        <ion-list>
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
-            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
-              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+        <img src="../assets/images/2.jpg" alt="" srcset="">
+        <ion-item-divider color="tertiary">
+          <ion-label>
+            {{'title.title'|translate}}
+          </ion-label>
+        </ion-item-divider>
+        <ion-list lines="none">
+          <ion-menu-toggle auto-hide="false">
+            <ion-item [routerDirection]="'root'" [routerLink]="[('home.url' | translate)]" color="transparent">
+              <ion-icon slot="start" [name]="('home.icon'| translate)"></ion-icon>
               <ion-label>
-                {{p.title}}
+                {{'home.title' | translate}}
               </ion-label>
             </ion-item>
           </ion-menu-toggle>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item [routerDirection]="'root'" [routerLink]="[('nearybySalons.url' | translate)]" color="transparent">
+              <ion-icon slot="start" [name]="('nearybySalons.icon'| translate)"></ion-icon>
+              <ion-label>
+                {{'nearybySalons.title' | translate}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item [routerDirection]="'root'" [routerLink]="[('about.url' | translate)]" color="transparent">
+              <ion-icon slot="start" [name]="('about.icon'| translate)"></ion-icon>
+              <ion-label>
+                {{'about.title' | translate}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item [routerDirection]="'root'" [routerLink]="[('contact.url' | translate)]" color="transparent">
+              <ion-icon slot="start" [name]="('contact.icon'| translate)"></ion-icon>
+              <ion-label>
+                {{'contact.title' | translate}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-item color="transparent">
+            <ion-icon slot="start" [name]="('language.icon'| translate)" (click)="changeLang()"></ion-icon>
+            <ion-label>
+              {{'language.title' | translate}}
+            </ion-label>
+            <ion-select [(ngModel)]="selectedLanguage" (ionChange)="changeLang()">
+              <ion-select-option value="en">English</ion-select-option>
+              <ion-select-option value="ar">Arabic</ion-select-option>
+            </ion-select>
+          </ion-item>
         </ion-list>
+        <ion-item-divider color="tertiary">
+          <ion-label>
+            {{'account'|translate}}
+          </ion-label>
+        </ion-item-divider>
       </ion-content>
     </ion-menu>
     <ion-router-outlet main></ion-router-outlet>

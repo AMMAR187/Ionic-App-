@@ -1,48 +1,43 @@
 {
-    "menu": [{
-            "home": {
-                "title": "Home",
-                "url": "home"
-            }
-        },
-        {
-            "nerybysalonat": {
-                "title": "Nearby Salons",
-                "url": "nearbySalons"
-            }
-        },
-        {
-            "about": {
-                "title": "About us",
-                "url": "aboutus"
-            }
-        },
-        {
-            "partners": {
-                "title": "Our Partners",
-                "url": "partners"
-            }
-        },
-        {
-            "contact": {
-                "title": "Contact us",
-                "url": "contact"
-            }
-        },
-        {
-            "language": {
-                "title": "Language",
-                "url": "language"
-            }
-        },
-        {
-            "share": {
-                "title": "Share App",
-                "url": "share"
-            }
-        }
-    ],
+    "name": "Salonat",
+    "account": "User",
+    "welcome": "Welcome to Salonat",
     "home": {
+        "title": "Home",
+        "url": "/home",
+        "icon": "apps"
+    },
+    "nearybySalons": {
+        "title": "Nearby Salons",
+        "url": "nearby-salons",
+        "icon": "compass"
+    },
+    "about": {
+        "title": "About us",
+        "url": "aboutus",
+        "icon": "information-circle"
+    },
+    "partners": {
+        "title": "Our Partners",
+        "url": "partners",
+        "icon": "people"
+    },
+    "contact": {
+        "title": "Contact us",
+        "url": "/contact",
+        "icon": "chatbubbles"
+    },
+    "language": {
+        "title": "Language",
+        "url": "language",
+        "icon": "exit"
+    },
+    "share": {
+        "title": "Share App",
+        "url": "share",
+        "icon": "paper-plane"
+    },
+    "title": {
         "title": "Salonat"
     }
 }

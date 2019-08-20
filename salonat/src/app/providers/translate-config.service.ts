@@ -16,4 +16,10 @@ export class TranslateConfigService {
   setLanguage(setLang) {
     this.translate.use(setLang);
   }
+  getMenu() {
+    this.translate.get('home').subscribe((menu) => {
+      console.log(menu);
+      return menu;
+    });
+  }
 }

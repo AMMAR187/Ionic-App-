@@ -12,7 +12,10 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, components } from './app-routing.module';
+import { AddSalonPageModule } from './pages/add-salon/add-salon.module';
+import { FormsModule } from '@angular/forms';
+
 
 export function LanguageLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
@@ -23,8 +26,10 @@ export function LanguageLoader(http: HttpClient) {
   entryComponents: [],
   imports: [
     BrowserModule,
+    components,
     IonicModule.forRoot(),
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
