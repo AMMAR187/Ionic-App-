@@ -103,6 +103,7 @@
         <variable name="GEOLOCATION_USAGE_DESCRIBTION" value="to track you" />
     </plugin>
     <edit-config file="*-Info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
-    <string> This App Wants to Track Your Location</string>
-    </edit-config>
+   <string>We use your location for full functionality of certain app features.</string>
+</edit-config>
+    <plugin name="cordova-sqlite-storage" spec="^3.3.0" />
 </widget>

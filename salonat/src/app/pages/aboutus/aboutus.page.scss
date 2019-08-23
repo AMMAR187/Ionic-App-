@@ -1,0 +1,19 @@
+ion-item {
+    --color: #4A148C;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+
+    a {
+        text-decoration: none;
+        color: #4A148C !important;
+        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Tajawal', sans-serif;
+    }
+
+
+}
+
+ion-item-divider {
+    --inner-padding-top: 10px !important;
+    --inner-padding-bottom: 10px !important;
+}

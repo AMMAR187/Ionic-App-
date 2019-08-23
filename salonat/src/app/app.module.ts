@@ -2,18 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
+
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateConfigService } from './providers/translate-config.service';
-
+import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { IonicStorageModule } from '@ionic/storage';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule, components } from './app-routing.module';
-import { AddSalonPageModule } from './pages/add-salon/add-salon.module';
 import { FormsModule } from '@angular/forms';
 
 
@@ -27,6 +28,7 @@ export function LanguageLoader(http: HttpClient) {
   imports: [
     BrowserModule,
     components,
+    IonicStorageModule.forRoot(),
     IonicModule.forRoot(),
     AppRoutingModule,
     FormsModule,
@@ -42,7 +44,8 @@ export function LanguageLoader(http: HttpClient) {
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    Geolocation
   ],
   bootstrap: [AppComponent]
 })

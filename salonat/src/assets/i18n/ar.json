@@ -1,11 +1,21 @@
 {
+    "lang": {
+        "ar": {
+            "title": "العربية",
+            "value": "ar"
+        },
+        "en": {
+            "title": "الإنجليزية",
+            "value": "en"
+        }
+    },
     "name": "صالونات",
     "account": "المستخدم",
     "welcome": "أهلا بكم في صالونات",
     "home": {
         "title": "الرئيسية",
         "url": "/home",
-        "icon": "apps"
+        "icon": "home"
 
     },
 
@@ -19,7 +29,48 @@
     "about": {
         "title": "من نحن",
         "url": "/aboutus",
-        "icon": "information-circle"
+        "icon": "help-circle-outline",
+        "heading": {
+            "heading": "تطبيق صالونات هو التطبيق الأول على مستوى العالم العربي الذي يقدم هذه الخدمات تجولي في التطبيق ستجدين مجموعة كبيرة و المميزات الغير موجودة في تطبيق اخر.",
+            "icon": "contact"
+        },
+        "mail": {
+            "heading": "info@salonat.com",
+            "icon": "mail"
+        },
+        "website": {
+            "heading": "www.salonat.com",
+            "icon": "globe"
+        },
+        "number1": {
+            "heading": "+966 114771114",
+            "icon": "call"
+        },
+        "number2": {
+            "heading": "+966 502674789",
+            "icon": "call"
+        },
+        "address": {
+            "heading": "صلاح الدين -الملز-الرياض",
+            "icon": "map"
+        },
+        "social": {
+            "heading": "مواقع التواصل",
+            "facebook": {
+                "heading": "@Salonat,SA",
+                "icon": "logo-facebook"
+            },
+            "twitter": {
+                "heading": "@Salonat,SA",
+                "icon": "logo-twitter"
+            },
+
+            "insta": {
+                "heading": "@Salonat,SA",
+                "icon": "logo-instagram"
+            }
+
+        }
 
     },
 
@@ -39,19 +90,28 @@
 
     "language": {
         "title": "اللغة",
-        "url": "language",
-        "icon": "exit"
+        "icon": "switch"
 
     },
-
-    "share ": {
+    "share": {
         "title": "مشاركة التطبيق",
         "url": "share",
         "icon": "paper-plane"
 
-    }
-
-    ,
+    },
+    "account": {
+        "title": "الحساب",
+        "login": {
+            "title": "تسجيل دخول",
+            "url": "login",
+            "icon": "person"
+        },
+        "signup": {
+            "title": "تسجيل",
+            "url": "signup",
+            "icon": "person-add"
+        }
+    },
     "title": {
         "title": "صالونات"
     }

@@ -1,0 +1,38 @@
+<ion-header translucent>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/contact" (click)="dismiss()"></ion-back-button>
+    </ion-buttons>
+    <ion-title>salonDetails</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-no-padding">
+  <ion-card class="ion-no-padding">
+    <ion-slides autoplay="3000" pager>
+
+      <ion-slide *ngFor="let img of images">
+        <img src="{{img}}" alt="" srcset="">
+      </ion-slide>
+    </ion-slides>
+    <ion-card-header style="text-align:start;">
+      <p>
+        9:00 am - 10:00 pm &nbsp;&nbsp;&nbsp;&nbsp;
+        <ion-chip style="margin-left:5px;">
+          <ion-label color="tertiary">Riyadh - Malaz </ion-label>
+        </ion-chip>
+      </p>
+      <h1 color="tertiary"> صالون مسك</h1>
+    </ion-card-header>
+    <ion-card-content style="text-align:start;">
+      <p text-wrap>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, facere cumque molestias vero ad tempore
+        vel a eum. Error ab accusantium corrupti quia modi beatae dolores! Omnis molestias rerum qui!</p>
+      <ion-button expand="full" fill="outline" color="tertiary">
+        <ion-icon slot="start" name="basket"></ion-icon> احجز موعد
+      </ion-button>
+      <ion-button expand="full" fill="outline" color="warning">
+        <ion-icon slot="start" name="heart"></ion-icon> توصل معنا
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

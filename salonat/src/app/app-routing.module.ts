@@ -6,9 +6,10 @@ import { ContactPageModule } from './pages/contact/contact.module';
 import { AboutusPageModule } from './pages/aboutus/aboutus.module';
 import { PartnersPageModule } from './pages/partners/partners.module';
 import { NearbySalonsPageModule } from './pages/nearby-salons/nearby-salons.module';
+import { SalonDetailsPageModule } from './pages/salon-details/salon-details.module';
 
 
-export const components = [AddSalonPageModule, HomePageModule, ContactPageModule, AboutusPageModule, PartnersPageModule, NearbySalonsPageModule];
+export const components = [SalonDetailsPageModule, AddSalonPageModule, HomePageModule, ContactPageModule, AboutusPageModule, PartnersPageModule, NearbySalonsPageModule];
 const routes: Routes = [
   {
     path: '',
@@ -24,7 +25,9 @@ const routes: Routes = [
   { path: 'nearby-salons', loadChildren: './pages/nearby-salons/nearby-salons.module#NearbySalonsPageModule' },
   { path: 'partners', loadChildren: './pages/partners/partners.module#PartnersPageModule' },
   { path: 'home', loadChildren: './pages/home/home.module#HomePageModule' },
-  { path: 'add-salon', loadChildren: './pages/add-salon/add-salon.module#AddSalonPageModule' }
+  { path: 'add-salon', loadChildren: './pages/add-salon/add-salon.module#AddSalonPageModule' },
+  { path: 'salon-details', loadChildren: './pages/salon-details/salon-details.module#SalonDetailsPageModule' },
+  { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' }
 ];
 
 @NgModule({

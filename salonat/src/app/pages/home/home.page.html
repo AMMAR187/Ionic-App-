@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header translucent>
   <ion-toolbar color="tertiary">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
@@ -14,14 +14,115 @@
 
 <ion-content>
   <ion-card class="welcome-card">
-    <img src="../assets/shapes.svg" alt="" />
+    <img src="../assets/images/7.jpg" alt="" />
     <ion-card-header>
-      <ion-card-subtitle>Get Started</ion-card-subtitle>
-      <ion-card-title>Welcome to Ionic</ion-card-title>
+      <ion-card-subtitle>
+        <ion-icon name="pin" color="tertiary"></ion-icon>Riyadh - Al-Nasseriyah
+      </ion-card-subtitle>
+      <ion-card-title>صالون مسك</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <p>Now that your app has been created, you'll want to start building out features and components. Check out some
-        of the resources below for next steps.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia soluta cum laborum sunt unde voluptate,
+        praesentium placeat quibusdam tempora eos sint vitae doloribus maiores iure nemo. Magni et exercitationem
+        inventore!</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle>
+        <ion-icon name="pin" color="tertiary"></ion-icon>Jeddah - Al-Nassem
+      </ion-card-subtitle>
+      <ion-card-title>صالون السعادة</ion-card-title>
+    </ion-card-header>
+    <img src="../assets/images/9.jpg" alt="" />
+    <ion-card-content>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia soluta cum laborum sunt unde voluptate,
+        praesentium placeat quibusdam tempora eos sint vitae doloribus maiores iure nemo. Magni et exercitationem
+        inventore!</p>
+    </ion-card-content>
+  </ion-card>
+  <br>
+  <ion-item-divider color="tertiary">Featured</ion-item-divider>
+  <br>
+  <ion-slides pager="true" [options]="slideOpts" scrollbar="true" class="ion-text-start">
+    <ion-slide>
+      <ion-card class="welcome-card">
+        <ion-card-header>
+          <ion-card-subtitle>
+            <ion-icon name="pin" color="tertiary"></ion-icon>Jeddah - Al-Aziziyah
+          </ion-card-subtitle>
+          <ion-card-title>صالون افراح</ion-card-title>
+        </ion-card-header>
+        <img src="../assets/images/8.jpg" alt="" />
+        <ion-card-content>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia soluta cum laborum sunt unde voluptate,
+            praesentium placeat quibusdam tempora eos sint vitae doloribus maiores iure nemo. Magni et exercitationem
+            inventore!</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="welcome-card">
+        <img src="../assets/images/9.jpg" alt="" />
+        <ion-card-header>
+          <ion-card-subtitle>
+            <ion-icon name="pin" color="tertiary"></ion-icon>Jeddah - Al-Nassem
+          </ion-card-subtitle>
+          <ion-card-title>صالون نجوى</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia soluta cum laborum sunt unde voluptate,
+            praesentium placeat quibusdam tempora eos sint vitae doloribus maiores iure nemo. Magni et exercitationem
+            inventore!</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="welcome-card">
+        <ion-card-header>
+          <ion-card-subtitle>
+            <ion-icon name="pin" color="tertiary"></ion-icon>Riyadh - Olya
+          </ion-card-subtitle>
+          <ion-card-title>صالون للعرسان</ion-card-title>
+        </ion-card-header>
+        <img src="../assets/images/8.jpg" alt="" />
+        <ion-card-content>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia soluta cum laborum sunt unde voluptate,
+            praesentium placeat quibusdam tempora eos sint vitae doloribus maiores iure nemo. Magni et exercitationem
+            inventore!</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <br>
+  <ion-item-divider color="tertiary">Near By </ion-item-divider>
+  <br>
+  <ion-card class="welcome-card">
+    <img src="../assets/images/7.jpg" alt="" />
+    <ion-card-header>
+      <ion-card-subtitle>
+        <ion-icon name="pin" color="tertiary"></ion-icon>Riyadh - Malaz
+      </ion-card-subtitle>
+      <ion-card-title>صالون السعادة</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia soluta cum laborum sunt unde voluptate,
+        praesentium placeat quibusdam tempora eos sint vitae doloribus maiores iure nemo. Magni et exercitationem
+        inventore!</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="welcome-card" (click)="showDetails()">
+    <ion-card-header>
+      <ion-card-subtitle>
+        <ion-icon name="pin" color="tertiary"></ion-icon>Jeddah - Al-Nassem
+      </ion-card-subtitle>
+      <ion-card-title>صالون النسيم</ion-card-title>
+    </ion-card-header>
+    <img src="../assets/images/8.jpg" alt="" />
+    <ion-card-content>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia soluta cum laborum sunt unde voluptate,
+        praesentium placeat quibusdam tempora eos sint vitae doloribus maiores iure nemo. Magni et exercitationem
+        inventore!</p>
     </ion-card-content>
   </ion-card>
 

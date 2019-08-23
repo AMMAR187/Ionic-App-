@@ -1,11 +1,21 @@
 {
+    "lang": {
+        "ar": {
+            "title": "Arabic",
+            "value": "ar"
+        },
+        "en": {
+            "title": "English",
+            "value": "en"
+        }
+    },
     "name": "Salonat",
     "account": "User",
     "welcome": "Welcome to Salonat",
     "home": {
         "title": "Home",
         "url": "/home",
-        "icon": "apps"
+        "icon": "home"
     },
     "nearybySalons": {
         "title": "Nearby Salons",
@@ -15,7 +25,49 @@
     "about": {
         "title": "About us",
         "url": "aboutus",
-        "icon": "information-circle"
+        "icon": "help-circle-outline",
+        "heading": {
+            "heading": "Salonat is the first app in middle east to provide salons service via smart phones,You will find a set of interesting features not available outside our app.",
+            "icon": "contact"
+        },
+        "mail": {
+            "heading": "info@salonat.com",
+            "icon": "mail"
+        },
+        "website": {
+            "heading": "www.salonat.com",
+            "icon": "globe"
+        },
+        "number1": {
+            "heading": "+966 114771114",
+            "icon": "call"
+        },
+        "number2": {
+            "heading": "+966 502674789",
+            "icon": "call"
+        },
+        "address": {
+            "heading": "Salah Adin _ Almalz _ Riyadh",
+            "icon": "map"
+        },
+        "social": {
+            "heading": "Social Media",
+            "facebook": {
+                "heading": "@Salonat,SA",
+                "icon": "logo-facebook"
+            },
+            "twitter": {
+                "heading": "@Salonat,SA",
+                "icon": "logo-twitter"
+            },
+
+            "insta": {
+                "heading": "@Salonat,SA",
+                "icon": "logo-instagram"
+            }
+
+        }
+
     },
     "partners": {
         "title": "Our Partners",
@@ -29,13 +81,26 @@
     },
     "language": {
         "title": "Language",
-        "url": "language",
+        "url": "switch",
         "icon": "exit"
     },
     "share": {
-        "title": "Share App",
+        "title": "Share The App",
         "url": "share",
         "icon": "paper-plane"
+    },
+    "account": {
+        "title": "Account",
+        "login": {
+            "title": "Login",
+            "url": "login",
+            "icon": "person"
+        },
+        "signup": {
+            "title": "SignUp",
+            "url": "signup",
+            "icon": "person-add"
+        }
     },
     "title": {
         "title": "Salonat"

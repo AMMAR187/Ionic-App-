@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header translucent>
   <ion-toolbar color="tertiary">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
@@ -12,5 +12,57 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-list>
+    <ion-item>
+      <ion-label text-wrap>
+        {{'about.heading.heading' | translate}}
+      </ion-label>
+      <ion-icon [name]="('about.heading.icon'| translate)" slot="start"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-label text-wrap>
+        {{'about.mail.heading' | translate}}
+      </ion-label>
+      <ion-icon [name]="('about.mail.icon'| translate)" slot="start"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-label text-wrap>
+        <a href="('about.website.heading' | translate)">{{'about.website.heading' | translate}}</a>
+      </ion-label>
+      <ion-icon [name]="('about.website.icon'| translate)" slot="start"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-label text-wrap>
+        <a href="('about.number1.heading' | translate)">{{'about.number1.heading' | translate}} </a>
+        <br>
+        <a href="('about.number2.heading' | translate)">{{'about.number2.heading' | translate}}</a>
+      </ion-label>
+      <ion-icon [name]="('about.number1.icon'| translate)" slot="start"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-label text-wrap>
+        {{'about.address.heading' | translate}}
+      </ion-label>
+      <ion-icon [name]="('about.address.icon'| translate)" slot="start"></ion-icon>
+    </ion-item>
+    <ion-item-divider color="tertiary">{{'about.social.heading'|translate}}</ion-item-divider>
+    <ion-item>
+      <ion-label text-wrap>
+        {{'about.social.facebook.heading' | translate}}
+      </ion-label>
+      <ion-icon [name]="('about.social.facebook.icon'| translate)" slot="start"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-label text-wrap>
+        {{'about.social.twitter.heading' | translate}}
+      </ion-label>
+      <ion-icon [name]="('about.social.twitter.icon'| translate)" slot="start"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-label text-wrap>
+        {{'about.social.insta.heading' | translate}}
+      </ion-label>
+      <ion-icon [name]="('about.social.insta.icon'| translate)" slot="start"></ion-icon>
+    </ion-item>
+  </ion-list>
 </ion-content>
