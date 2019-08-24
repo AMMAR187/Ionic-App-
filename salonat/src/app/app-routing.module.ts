@@ -27,7 +27,8 @@ const routes: Routes = [
   { path: 'home', loadChildren: './pages/home/home.module#HomePageModule' },
   { path: 'add-salon', loadChildren: './pages/add-salon/add-salon.module#AddSalonPageModule' },
   { path: 'salon-details', loadChildren: './pages/salon-details/salon-details.module#SalonDetailsPageModule' },
-  { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' }
+  { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
+  { path: 'signup', loadChildren: './pages/signup/signup.module#SignupPageModule' }
 ];
 
 @NgModule({

@@ -6,6 +6,17 @@
 
 ion-card {
     padding: 0 !important;
+    border-radius: 0px;
+    margin: 0 !important;
+
+    ion-card-header {
+        padding-top: 0 !important;
+    }
+
+    ion-card-content {
+        padding: 0 !important;
+
+    }
 
 }
 

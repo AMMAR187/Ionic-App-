@@ -25,14 +25,120 @@
       <h1 color="tertiary"> صالون مسك</h1>
     </ion-card-header>
     <ion-card-content style="text-align:start;">
-      <p text-wrap>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, facere cumque molestias vero ad tempore
-        vel a eum. Error ab accusantium corrupti quia modi beatae dolores! Omnis molestias rerum qui!</p>
-      <ion-button expand="full" fill="outline" color="tertiary">
-        <ion-icon slot="start" name="basket"></ion-icon> احجز موعد
-      </ion-button>
-      <ion-button expand="full" fill="outline" color="warning">
-        <ion-icon slot="start" name="heart"></ion-icon> توصل معنا
-      </ion-button>
+      <ion-segment [(ngModel)]="segment" color="tertiary" value="info">
+        <ion-segment-button value="info" checked>
+          <ion-label>Information</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="comments">
+          <ion-label>Comments</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="location">
+          <ion-label>Location</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+      <div [ngSwitch]="segment">
+        <div *ngSwitchCase="'info'" class="ion-padding">
+          <p text-wrap>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, facere cumque molestias vero ad
+            tempore
+            vel a eum. Error ab accusantium corrupti quia modi beatae dolores! Omnis molestias rerum qui!</p>
+          <p text-wrap>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, facere cumque molestias vero ad
+            tempore
+            vel a eum. Error ab accusantium corrupti quia modi beatae dolores! Omnis molestias rerum qui!</p>
+          <br>
+          <ion-button expand="block" fill="solid" color="warning">
+            <ion-icon slot="start" name="text"></ion-icon> تواصل معنا
+          </ion-button>
+        </div>
+        <div *ngSwitchCase="'location'">output1</div>
+        <div *ngSwitchCase="'comments'">
+          <ion-list>
+            <ion-item-divider color="tertiary">التعليقات</ion-item-divider>
+            <ion-item>
+              <ion-avatar>
+                <img src="../../../assets/images/admin.png" alt="">
+              </ion-avatar>
+              <ion-label>
+                <h2>Finn</h2>
+                <span>
+                  <ion-icon style="color:#d4af34;" small name="star"></ion-icon>
+                </span>
+                <span>
+                  <ion-icon style="color:#d4af34;" small name="star"></ion-icon>
+                </span>
+                <span>
+                  <ion-icon style="color:#d4af34;" small name="star"></ion-icon>
+                </span>
+                <span>
+                  <ion-icon style="color:#d4af34;" small name="star"></ion-icon>
+                </span>
+                <span>
+                  <ion-icon style="color:#d4af34;" small name="star"></ion-icon>
+                </span>
+                <h3>I've got enough on my plate as it is, and I...</h3>
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-avatar>
+                <img src="../../../assets/images/admin.png" alt="" srcset="">
+              </ion-avatar>
+              <ion-label>
+                <h2>Finn</h2>
+                <span>
+                  <ion-icon style="color:#d4af34;" small name="star"></ion-icon>
+                </span>
+                <span>
+                  <ion-icon style="color:#d4af34;" small name="star"></ion-icon>
+                </span>
+                <span>
+                  <ion-icon style="color:#d4af34;" small name="star"></ion-icon>
+                </span>
+                <span>
+                  <ion-icon style="color:#d4af34;" small name="star"></ion-icon>
+                </span>
+                <span>
+                  <ion-icon style="color:#d4af34;" small name="star"></ion-icon>
+                </span>
+                <h3>I've got enough on my plate as it is, and I...</h3>
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-avatar>
+                <img src="../../../assets/images/admin.png" alt="" srcset="">
+              </ion-avatar>
+              <ion-label>
+                <h2>Finn</h2>
+                <span>
+                  <ion-icon style="color:#d4af34;" small name="star"></ion-icon>
+                </span>
+                <span>
+                  <ion-icon style="color:#d4af34;" small name="star"></ion-icon>
+                </span>
+                <span>
+                  <ion-icon style="color:#d4af34;" small name="star"></ion-icon>
+                </span>
+                <span>
+                  <ion-icon style="color:#d4af34;" small name="star"></ion-icon>
+                </span>
+                <span>
+                  <ion-icon style="color:#d4af34;" small name="star"></ion-icon>
+                </span>
+                <h3>I've got enough on my plate as it is, and I...</h3>
+              </ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating" color="tertiary">اضف تعليق</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+          </ion-list>
+        </div>
+
+      </div>
+
     </ion-card-content>
   </ion-card>
 </ion-content>
+<ion-footer>
+  <ion-button expand="full" fill="solid" color="tertiary">
+    <ion-icon slot="start" name="time"></ion-icon> احجز موعد
+  </ion-button>
+</ion-footer>

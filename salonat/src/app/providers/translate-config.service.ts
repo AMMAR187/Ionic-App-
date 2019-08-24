@@ -1,13 +1,15 @@
 
 import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { Platform } from '@ionic/angular';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TranslateConfigService {
 
-  constructor(private translate: TranslateService) { }
+  constructor(private translate: TranslateService,
+    private platform: Platform, ) { }
   getDefaultLanguage() {
     const language = this.translate.getBrowserLang();
     this.translate.setDefaultLang(language);

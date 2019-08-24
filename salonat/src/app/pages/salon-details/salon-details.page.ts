@@ -7,6 +7,7 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./salon-details.page.scss'],
 })
 export class SalonDetailsPage implements OnInit {
+  segment='info';
   images = ['../assets/images/6.jpg', '../assets/images/7.jpg', '../assets/images/8.jpg', '../assets/images/9.jpg'];
   constructor(private navCtrl: NavController) { }
 
@@ -16,4 +17,5 @@ export class SalonDetailsPage implements OnInit {
   dismiss() {
     this.navCtrl.pop();
   }
+
 }
