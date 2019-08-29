@@ -1,0 +1,25 @@
+"salons": [{
+        "name": "",
+        "image": "",
+        "description": "lorem",
+        "location": {
+            "name": "",
+            "map": {
+                "lat": "",
+                "lag": ""
+            }
+        }
+    },
+    {
+        "name": "",
+        "image": "",
+        "description": "lorem",
+        "location": {
+            "name": "",
+            "map": {
+                "lat": "",
+                "lag": ""
+            }
+        }
+    }
+]

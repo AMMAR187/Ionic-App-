@@ -18,6 +18,43 @@
 @import "~@ionic/angular/css/typography.css";
 @import '~@ionic/angular/css/display.css';
 
+
+
+ion-toolbar,
+ion-item-divider {
+
+    ion-menu-button,
+    .sc-ion-back-button-ios {
+        color: aliceblue;
+    }
+
+    --background: url('./assets/images/12.png');
+    color: aliceblue;
+}
+
+.alert-head,
+.alert-button-group {
+
+    .alert-title,
+    .alert-button {
+        color: aliceblue;
+    }
+
+    background: url('./assets/images/12.png');
+}
+
+ion-fab-button {
+    --background: url('./assets/images/12.png');
+}
+
+.alert-wrapper.sc-ion-alert-md {
+    border-radius: 5px;
+}
+
+.alert-message {
+    padding-bottom: 0 !important;
+}
+
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
 @import "~@ionic/angular/css/float-elements.css";
@@ -25,7 +62,7 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-@import url('https://fonts.googleapis.com/css?family=Tajawal:500,700|Ubuntu:500,700&display=swap&subset=arabic');
+@import url('https://fonts.googleapis.com/css?family=Tajawal:500|Ubuntu:500&display=swap&subset=arabic');
 
 * {
     font-family: 'Ubuntu', sans-serif !important;

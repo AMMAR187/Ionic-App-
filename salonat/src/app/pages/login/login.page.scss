@@ -1,10 +1,20 @@
-ion-item {
-    --background: #aa00ff;
+ion-content {
+    --background: url('../../../assets/images/12.png');
     --color: #fff;
+
+    ion-item {
+        --background: transparent;
+        --color: #fff;
+    }
+}
+
+img {
+    height: 35vh;
 }
 
 ion-button {
-    --background: #6A1B9A;
+    --background: #ffffff;
+    color: #6A1B9A;
 }
 
 a {

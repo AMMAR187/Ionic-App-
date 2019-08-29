@@ -1,5 +1,5 @@
 <ion-header translucent>
-  <ion-toolbar color="tertiary">
+  <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/contact" (click)="dismiss()"></ion-back-button>
     </ion-buttons>
@@ -49,10 +49,12 @@
             <ion-icon slot="start" name="text"></ion-icon> تواصل معنا
           </ion-button>
         </div>
-        <div *ngSwitchCase="'location'">output1</div>
+        <div *ngSwitchCase="'location'">
+          <img src="../../../assets/images/map.jpg" alt="" srcset="">
+        </div>
         <div *ngSwitchCase="'comments'">
           <ion-list>
-            <ion-item-divider color="tertiary">التعليقات</ion-item-divider>
+            <ion-item-divider>التعليقات</ion-item-divider>
             <ion-item>
               <ion-avatar>
                 <img src="../../../assets/images/admin.png" alt="">
@@ -139,6 +141,7 @@
 </ion-content>
 <ion-footer>
   <ion-button expand="full" fill="solid" color="tertiary">
-    <ion-icon slot="start" name="time"></ion-icon> احجز موعد
+    <ion-icon slot="start" name="time">
+    </ion-icon> احجز موعد
   </ion-button>
 </ion-footer>
